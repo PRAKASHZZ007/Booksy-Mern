@@ -19,7 +19,7 @@ const Profile = () => {
       try {
         const token = localStorage.getItem("token");
 
-        const res = await fetch("http://localhost:5000/api/auth/me", {
+        const res = await fetch(`${import.meta.env.VITE_API_URL}/api/auth/me`, {
           headers: {
             Authorization: `Bearer ${token}`, // ✅ FIXED
           },
@@ -49,7 +49,7 @@ const Profile = () => {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Bearer ${token}`, // ✅ FIXED
+          Authorization: `Bearer ${token}`,
         },
         body: JSON.stringify(user),
       });
@@ -76,10 +76,10 @@ const Profile = () => {
     try {
       const token = localStorage.getItem("token");
 
-      const res = await fetch(`${import.meta.env.VITE_API_URL}api/auth/delete`, {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/api/auth/delete`, {
         method: "DELETE",
         headers: {
-          Authorization: `Bearer ${token}`, // ✅ FIXED
+          Authorization: `Bearer ${token}`,
         },
       });
 
