@@ -68,7 +68,7 @@ const Orders = () => {
   const handleConfirmCancel = async () => {
     try {
       const res = await fetch(
-        `http://localhost:5000/api/orders/${selectedOrderId}`,
+        `${process.env.REACT_APP_API_URL}/api/orders/${selectedOrderId}`,
         {
           method: "DELETE",
           headers: {

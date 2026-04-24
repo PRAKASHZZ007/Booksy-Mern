@@ -16,7 +16,7 @@ const AuthModal = ({ type, onClose }) => {
 
   const [errors, setErrors] = useState({});
 
-  const API = "http://localhost:5000/api/auth";
+  const API = `${process.env.REACT_APP_API_URL}/api/auth`;
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });

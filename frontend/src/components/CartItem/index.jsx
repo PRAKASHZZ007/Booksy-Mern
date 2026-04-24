@@ -15,7 +15,7 @@ const CartItem = ({ cartItemDetails, refreshCart }) => {
   const token = localStorage.getItem("token");
 
 const increase = async () => {
-  await fetch("http://localhost:5000/api/cart", {
+  await fetch(`${process.env.REACT_APP_API_URL}/api/cart`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -34,7 +34,7 @@ const increase = async () => {
 };
 
 const decrease = async () => {
-  await fetch(`http://localhost:5000/api/cart/${bookId}`, {
+  await fetch(`${process.env.REACT_APP_API_URL}/api/cart/${bookId}`, {
     method: "PUT",
     headers: {
       "Content-Type": "application/json",
@@ -47,7 +47,7 @@ const decrease = async () => {
 };
 
   const remove = async () => {
-    await fetch(`http://localhost:5000/api/cart/${bookId}`, {
+    await fetch(`${process.env.REACT_APP_API_URL}/api/cart/${bookId}`, {
       method: "DELETE",
       headers: {
         Authorization: `Bearer ${token}`,
