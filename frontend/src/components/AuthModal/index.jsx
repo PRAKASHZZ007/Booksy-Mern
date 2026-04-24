@@ -88,6 +88,7 @@ const AuthModal = ({ type, onClose }) => {
         toast.error(data.message);
       }
     } catch {
+      console.error("Signup Error:", err);
       toast.error("Server error");
     }
   };
