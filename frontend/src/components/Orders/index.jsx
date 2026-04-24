@@ -68,7 +68,7 @@ const Orders = () => {
   const handleConfirmCancel = async () => {
     try {
       const res = await fetch(
-        `${process.env.REACT_APP_API_URL}/api/orders/${selectedOrderId}`,
+        `${import.meta.env.VITE_API_URL}/api/orders/${selectedOrderId}`,
         {
           method: "DELETE",
           headers: {

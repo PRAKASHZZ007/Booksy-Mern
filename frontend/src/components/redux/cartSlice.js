@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
-const API = `${process.env.REACT_APP_API_URL}/api/cart`;
+const API = `${import.meta.env.VITE_API_URL}/api/cart`;
 
 const getHeaders = () => ({
   Authorization: `Bearer ${localStorage.getItem("token")}`,

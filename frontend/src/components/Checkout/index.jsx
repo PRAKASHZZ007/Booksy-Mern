@@ -26,7 +26,7 @@ const Checkout = () => {
 
   // ✅ LOAD CART
   const fetchCart = async () => {
-    const res = await fetch(`${process.env.REACT_APP_API_URL}/api/cart`, {
+    const res = await fetch(`${import.meta.env.VITE_API_URL}/api/cart`, {
       headers: { Authorization: `Bearer ${token}` },
     });
 
@@ -48,7 +48,7 @@ const Checkout = () => {
 
   // ✅ PLACE ORDER
 const handleOrderSubmit = async (details) => {
-  const res = await fetch(`${process.env.REACT_APP_API_URL}/api/orders`, {
+  const res = await fetch(`${import.meta.env.VITE_API_URL}/api/orders`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -66,7 +66,7 @@ const handleOrderSubmit = async (details) => {
     setCurrentOrder(data);
     setOrderPlaced(true);
 
-    await fetch(`${process.env.REACT_APP_API_URL}/api/cart/clear`, {
+    await fetch(`${import.meta.env.VITE_API_URL}/api/cart/clear`, {
       method: "DELETE",
       headers: {
         Authorization: `Bearer ${token}`,

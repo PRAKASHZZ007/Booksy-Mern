@@ -76,7 +76,7 @@ const Profile = () => {
     try {
       const token = localStorage.getItem("token");
 
-      const res = await fetch(`${process.env.REACT_APP_API_URL}api/auth/delete`, {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}api/auth/delete`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${token}`, // ✅ FIXED
