@@ -18,6 +18,8 @@ const Profile = () => {
     const load = async () => {
       try {
         const token = localStorage.getItem("token");
+         console.log("API URL:", import.meta.env.VITE_API_URL);
+         console.log("TOKEN:", token);
 
         const res = await fetch(`${import.meta.env.VITE_API_URL}/api/auth/me`, {
           headers: {
@@ -26,6 +28,9 @@ const Profile = () => {
         });
 
         const data = await res.json();
+        console.log("RESPONSE:", data);
+        
+        console.log("API URL:", import.meta.env.VITE_API_URL);
 
         if (res.ok) {
           setUser(data.user);
@@ -33,6 +38,7 @@ const Profile = () => {
           toast.error(data.message);
         }
       } catch {
+         console.error("profile error:", err);
         toast.error("Failed to load profile");
       }
     };
