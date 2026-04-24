@@ -1,0 +1,81 @@
+.cart-item-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: stretch;
+}
+
+.cart-book-image {
+    width: 40%;
+    max-width: 200px;
+}
+
+.cart-book-subtitle {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .cart-book-subtitle {
+        display: inline;
+    }
+}
+
+.product-info-container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-actions-container {
+    display: flex;
+    width: 20%;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+/* DELETE BUTTON (clean version) */
+.delete-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid black;
+}
+
+/* ICON */
+.delete-icon {
+    font-size: 30px;
+    color: #e63946;
+}
+
+/* AMOUNT SECTION */
+.amount-container {
+    display: flex;
+    width: 15%;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    padding: 20px;
+}
+
+.quantity-btn {
+    font-size: 26px;
+    margin: 15px;
+    background-color: #630202;
+    color: white;
+}
+
+.quantity-text {
+    font-size: 20px;
+}
+
+.book-price {
+    font-size: 20px;
+}
+
+.book-image{
+    margin: 20px
+}

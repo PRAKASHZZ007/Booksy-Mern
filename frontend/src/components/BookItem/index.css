@@ -1,0 +1,74 @@
+/* CARD */
+.book-item-container {
+  flex: 0 1 22%;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  background: #fff;
+  transition: box-shadow 0.3s ease;
+}
+
+/* HOVER (no color change) */
+.book-item-container:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* IMAGE (medium size) */
+.book-image {
+  width: 100%;
+  max-width: 160px;
+  height: 220px;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+
+/* TITLE */
+.book-title {
+  font-size: 14px;
+  margin: 5px 0;
+  word-break: break-word;
+}
+
+/* SUBTITLE */
+.book-subtitle {
+  font-size: 13px;
+  margin: 4px 0;
+  word-break: break-word;
+}
+
+/* ⭐ RATING */
+.book-rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  margin-top: 4px;
+  color: #ffa41c;
+}
+
+.rating-number {
+  font-size: 12px;
+  color: #333;
+  margin-left: 5px;
+}
+
+/* PRICE */
+.book-price {
+  font-size: 15px;
+  margin: 5px;
+  font-weight: bold;
+  color: black;
+}
+
+/* LINK */
+.book-item-nav-link {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

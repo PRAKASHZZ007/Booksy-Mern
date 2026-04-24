@@ -1,0 +1,147 @@
+/* WRAPPER */
+.orders-page {
+  min-height: 100vh;
+}
+
+/* HEADER (YELLOW) */
+.checkout-banner {
+  background-color: #ffe619;
+  padding: 10px 0;
+}
+
+.checkout-banner-content-container {
+  width: 95%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-size: 35px;
+  background-color: transparent;
+  color: black;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin-right: 5px;
+  border: none;
+  box-shadow: none;  
+  border:1px solid black 
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+/* CONTENT */
+.checkout-form {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+}
+
+.checkout-content-container {
+  width: 95%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkout-heading {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* ORDER CARD */
+.summary-container {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+/* ORDER NUMBER */
+.order-number {
+  margin-bottom: 10px;
+}
+
+/* ITEM ROW */
+.summary-item-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+}
+
+.summary-item-container:last-child {
+  border-bottom: none;
+}
+
+/* IMAGE */
+.summary-item-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* TEXT */
+.summary-item-title {
+  flex: 1;
+}
+
+.summary-item-qty {
+  width: 80px;
+  text-align: center;
+}
+
+.summary-item-price {
+  width: 100px;
+  text-align: right;
+}
+
+/* TOTAL */
+.total-row {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  border-top: 2px solid #ddd;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+/* CANCEL BUTTON */
+.cancel-container {
+  text-align: right;
+  margin-top: 10px;
+}
+
+.cancel-btn {
+  background-color: #ff4d4f;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cancel-btn:hover {
+  background-color: #d9363e;
+}
+
+/* EMPTY */
+.checkout-content-container {
+  width: 100%;
+  max-width: 900px;
+  margin: auto; /* ✅ center */
+}

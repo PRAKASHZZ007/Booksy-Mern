@@ -1,0 +1,148 @@
+.profile-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  padding: 20px;
+  background: #fafafa;
+}
+
+/* CARD */
+.profile-card {
+  width: 420px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid #e6e6e6;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+.profile-card:hover {
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.profile-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+/* FIELD */
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.field label {
+  font-size: 13px;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #555;
+}
+
+.field input {
+  height: 40px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+/* INPUT FOCUS */
+.field input:focus {
+  border: 1px solid #f0c14b;
+  box-shadow: 0 0 6px rgba(240,193,75,0.5);
+}
+
+/* DISABLED INPUT */
+.field input:disabled {
+  background: #f9f9f9;
+  border: 1px dashed #ccc;
+  color: #777;
+  cursor: not-allowed;
+}
+
+/* BUTTON GROUP */
+.btn-group {
+  margin-top: 20px;
+}
+
+/* COMMON BUTTON */
+.edit-btn,
+.save-btn,
+.cancel-btn,
+.delete-btn {
+  width: 100%;
+  padding: 11px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.25s ease;
+  border: none;
+}
+
+/* HOVER COMMON */
+.edit-btn:hover,
+.save-btn:hover,
+.cancel-btn:hover,
+.delete-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+/* EDIT */
+.edit-btn {
+  background: #ffd814;
+}
+.edit-btn:hover {
+  background: #f7ca00;
+}
+
+/* SAVE */
+.save-btn {
+  background: #2e7d32;
+  color: #fff;
+}
+.save-btn:hover {
+  background: #1b5e20;
+}
+
+/* CANCEL */
+.cancel-btn {
+  background: #e0e0e0;
+  color: #333;
+}
+.cancel-btn:hover {
+  background: #bdbdbd;
+}
+
+/* DELETE */
+.delete-btn {
+  background: #d32f2f;
+  color: #fff;
+  margin-top: 5px;
+}
+.delete-btn:hover {
+  background: #b71c1c;
+}
+
+/* ACTIVE */
+.edit-btn:active,
+.save-btn:active,
+.cancel-btn:active,
+.delete-btn:active {
+  transform: scale(0.96);
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+  .profile-card {
+    width: 100%;
+    padding: 20px;
+  }
+}
